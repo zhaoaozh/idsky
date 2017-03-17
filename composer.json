@@ -1,0 +1,24 @@
+{
+  "name": "Idsky/Idsky",
+  "description": "PHP Framework",
+  "keywords": ["simple", "framework"],
+  "license": "MIT",
+  "require": {
+    "php": ">=5.4.0",
+    "filp/whoops": "*",
+    "nette/mail": "*",
+    "monolog/monolog": "*",
+    "zhuzhichao/ip-location-zh":"*",
+    "testinaweb/dynamic-crypto":"*",
+    "curl/curl":"*",
+    "endroid/qrcode": "~1.5",
+    "phpmailer/phpmailer": "~5.2"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+            {"type": "composer", "url": "https://packagist.phpcomposer.com/"},
+		{"packagist": false}
+      ]
+}
