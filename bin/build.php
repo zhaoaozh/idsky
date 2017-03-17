@@ -1,7 +1,7 @@
 <?php
 /*
 *idsky 创建项目脚本
-*(c) muzizhao <muzizhao.cn>
+*(c) zhaoaozh <zhaoaozh@gmail.com> <zhaozhao.name>
 */
 
 $projectName = $argv[1];

@@ -1,7 +1,7 @@
 <?php
 /*
 *Request 类
-*(c) muzizhao <muzizhao.cn>
+*(c) zhaoaozh <zhaoaozh@gmail.com> <zhaozhao.name>
 */
 namespace Idsky\Lib;
 class Request

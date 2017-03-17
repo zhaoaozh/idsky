@@ -1,7 +1,7 @@
 <?php
 /*
 *idsky mysql_pdo类
-*(c) muzizhao <muzizhao.cn>
+*(c) zhaoaozh <zhaoaozh@gmail.com> <zhaozhao.name>
 **/
 namespace Idsky\Ext\Mysql;
 class Pdo

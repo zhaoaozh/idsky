@@ -1,7 +1,7 @@
-<?php 
+<?php
 /*
 *idsky  redis类
-*(c) lilichao <lilichao@idcool.com.cn>
+*(c) zhaoaozh <zhaoaozh@gmail.com> <zhaozhao.name>
 **/
 namespace Idsky\Ext;
 
@@ -9,18 +9,18 @@ class Redis
 {
     private static $_instance;
     private $connects;
-    
+
     private function __construct(){
-        
+
     }
-    
+
     public static function getInstance(){
         if(!self::$_instance){
             self::$_instance = new self;
         }
         return self::$_instance;
     }
-    
+
     public function connect($key=''){
         $allConfig = \C::getByName('redis');
         if(empty($key)){
@@ -33,12 +33,12 @@ class Redis
         }
         try {
             $redis = new \redis();
-            $redis->connect($config['host'],$config['port']);    
-            $this->connects[$key] = $redis;         
+            $redis->connect($config['host'],$config['port']);
+            $this->connects[$key] = $redis;
         } catch (Exception $e){
             throw new \Exception($e->getMessage());
         }
-        
+
         return $this->connects[$key];
     }
 }

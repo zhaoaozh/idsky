@@ -1,7 +1,7 @@
 <?php
     /*
     *idsky 未使用idsky框架使用的调用API
-    *(c) muzizhao <muzizhao.cn>
+    *(c) zhaoaozh <zhaoaozh@gmail.com> <zhaozhao.name>
     **/
     defined('IDSKYDIR') || define('IDSKYDIR', dirname(__FILE__));
     defined('PRJDIR') || define('PRJDIR',dirname(dirname(__FILE__)));

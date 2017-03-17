@@ -1,7 +1,7 @@
 <?php
 /*
 *idsky 小工具助手
-*(c) muzizhao <muzizhao.cn>
+*(c) zhaoaozh <zhaoaozh@gmail.com> <zhaozhao.name>
 **/
 namespace Idsky\Lib;
 use Zhuzhichao\IpLocationZh\Ip;

@@ -1,7 +1,7 @@
 <?php
 /*
 *idsky 验证类
-*(c) muzizhao <muzizhao.cn>
+*(c) zhaoaozh <zhaoaozh@gmail.com> <zhaozhao.name>
 */
 namespace Idsky\Lib;
 class Validate

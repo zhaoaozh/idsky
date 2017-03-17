@@ -1,7 +1,7 @@
 <?php
 /*
 *idsky  自动加载类
-*(c) muzizhao <muzizhao.cn>
+*(c) zhaoaozh <zhaoaozh@gmail.com> <zhaozhao.name>
 */
 namespace Idsky\Core;
 class Autoload

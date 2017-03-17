@@ -1,7 +1,7 @@
 <?php
 /*
 *idsky 全局函数
-*(c) muzizhao <muzizhao.cn>
+*(c) zhaoaozh <zhaoaozh@gmail.com> <zhaozhao.name>
 */
 class_alias("\Idsky\Core\Model","\Model");
 class_alias("\Idsky\Core\View","\View");

@@ -1,7 +1,7 @@
 <?php
 /*
 *idsky 核心类
-*(c) muzizhao <muzizhao.cn>
+*(c) zhaoaozh <zhaoaozh@gmail.com> <zhaozhao.name>
 **/
 defined('IDSKYDIR') || define('IDSKYDIR', dirname(__FILE__));
 include_once (IDSKYDIR.'/core/Autoload.php');

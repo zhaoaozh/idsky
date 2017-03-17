@@ -1,25 +1,25 @@
 <?php
 /*
 *idsky  控制器基类
-*(c) lilichao <lilichao@idcool.com.cn>
+*(c) zhaoaozh <zhaoaozh@gmail.com> <zhaozhao.name>
 */
 namespace Idsky\Core;
-class Controller 
+class Controller
 {
     protected $title;
     protected $keywords;
     protected $description;
-    
+
     protected $_controller;
     protected $_action;
     private $redis;
-    
+
     public function __construct(){
         $idsky = \Idsky::getInstance();
         $this->_controller = $idsky->dispatchInfo['controller'];
         $this->_action = $idsky->dispatchInfo['action'];
     }
-    
+
     protected function get($key='',$default=''){
         return \Idsky\Lib\Request::get($key,$default);
     }
@@ -31,7 +31,7 @@ class Controller
     protected function input($parse=false){
         return \Idsky\Lib\Request::input($parse);
     }
-    
+
     protected function redirect($url, $code = 302){
         \Idsky\Lib\Response::redirect($url,$code);
     }
@@ -42,9 +42,9 @@ class Controller
         if($controller && $action){
             $func = array($controller,$action);
             call_user_func($func);
-        } 
+        }
     }
-    
+
     protected function view($viewsHome=null){
         return $this->view = \View::getInstance($viewsHome);
     }
@@ -63,7 +63,7 @@ class Controller
     protected function json($status=1,$info='',$data='',$header=true){
         return \Idsky\Lib\Response::json($status,$info,$data,$header);
     }
-    
+
     protected function xml($xml,$header=true){
         return \Idsky\Lib\Response::xml($xml,$header);
     }
@@ -72,11 +72,11 @@ class Controller
         $instance = \Idsky\Ext\Redis::getInstance();
         return $this->redis = $instance->connect($key);
     }
-    
+
     protected function isAjax(){
         return \Idsky\Lib\Request::isAjax();
     }
-    
+
     public function __set($key, $value = null){
         $this->$key = $value;
     }
@@ -96,7 +96,7 @@ class Controller
                 return $this->request ? $this->request : $this->request = new \Idsky\Lib\Request();
                 break;
             case 'validator':
-                return $this->validator ? $this->validator : $this->validator = new \Idsky\Lib\Validate(); 
+                return $this->validator ? $this->validator : $this->validator = new \Idsky\Lib\Validate();
                 break;
             case 'redis':
                 return $this->redis ? $this->redis : $this->redis();
