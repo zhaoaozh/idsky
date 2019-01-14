@@ -1,5 +1,5 @@
 ## 1.下载idsky
-####  git clone https://github.com/muzizhao/idsky/
+####  git clone https://github.com/zhaoaozh/idsky/
 ## 2.安装Composer
 #### curl -sS https://getcomposer.org/installer | php &&  mv composer.phar /usr/local/bin/composer
 ## 3.使用Composer安装依赖
